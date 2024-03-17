@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de nombres</title>
+</head>
+<body>
+
+<button onclick="generarNombre()">Generar nombre</button>
+<p id="nombre"></p>
+
+<script>
+function generarNombre() {
+    var nombres = ['Lucía', 'Lukas'];
+    var indice = Math.floor(Math.random() * 2); // Genera un número aleatorio entre 0 y 1
+
+    document.getElementById('nombre').textContent = nombres[indice];
+}
+</script>
+
+</body>
+</html>
